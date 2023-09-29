@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
 	title: {
-		default: "chronark.com",
-		template: "%s | chronark.com",
+		default: "RajaSJN.com",
+		template: "%s | RajaSJN.com",
 	},
 	description: "Software engineer at upstash.com and founder of planetfall.io",
 	openGraph: {
-		title: "chronark.com",
+		title: "RajaSJN.com",
 		description:
 			"Software engineer at upstash.com and founder of planetfall.io",
-		url: "https://chronark.com",
-		siteName: "chronark.com",
+		url: "https://RajaSJN.com",
+		siteName: "RajaSJN.com",
 		images: [
 			{
-				url: "https://chronark.com/og.png",
+				url: "/Logo.png",
 				width: 1920,
 				height: 1080,
 			},
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
 		card: "summary_large_image",
 	},
 	icons: {
-		shortcut: "/favicon.png",
+		shortcut: "/Logo.png",
 	},
 };
 const inter = Inter({
