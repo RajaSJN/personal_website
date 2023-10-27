@@ -80,9 +80,9 @@ jobs:
       # - name: Static HTML export with Next.js
       #   run: ${{ steps.detect-package-manager.outputs.runner }} npm run export
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: $GITHUB_WORKSPACE/out
 
   # Deployment job
   deploy:
