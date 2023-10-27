@@ -10,6 +10,7 @@ import projects__terraformProviderVercelMdx from './projects__terraform-provider
 import projects__unkeyMdx from './projects__unkey.mdx.json' assert { type: 'json' }
 import projects__upstashAuthAnalyticsMdx from './projects__upstash-auth-analytics.mdx.json' assert { type: 'json' }
 import projects__upstashCliMdx from './projects__upstash-cli.mdx.json' assert { type: 'json' }
+import projects__upstashCoreAnalyticsMdx from './projects__upstash-core-analytics.mdx.json' assert { type: 'json' }
 import projects__upstashEdgeFlagsMdx from './projects__upstash-edge-flags.mdx.json' assert { type: 'json' }
 import projects__upstashKafkaMdx from './projects__upstash-kafka.mdx.json' assert { type: 'json' }
 import projects__upstashQstashSdkMdx from './projects__upstash-qstash-sdk.mdx.json' assert { type: 'json' }
@@ -19,4 +20,4 @@ import projects__upstashRedisMdx from './projects__upstash-redis.mdx.json' asser
 import projects__upstashWebAnalyticsMdx from './projects__upstash-web-analytics.mdx.json' assert { type: 'json' }
 import projects__zodBirdMdx from './projects__zod-bird.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__accessMdx, projects__chronarkComMdx, projects__envshareMdx, projects__highstormMdx, projects__planetfallMdx, projects__qstashMdx, projects__terraformProviderVercelMdx, projects__unkeyMdx, projects__upstashAuthAnalyticsMdx, projects__upstashCliMdx, projects__upstashEdgeFlagsMdx, projects__upstashKafkaMdx, projects__upstashQstashSdkMdx, projects__upstashRatelimitMdx, projects__upstashReactUiMdx, projects__upstashRedisMdx, projects__upstashWebAnalyticsMdx, projects__zodBirdMdx]
+export const allProjects = [projects__accessMdx, projects__chronarkComMdx, projects__envshareMdx, projects__highstormMdx, projects__planetfallMdx, projects__qstashMdx, projects__terraformProviderVercelMdx, projects__unkeyMdx, projects__upstashAuthAnalyticsMdx, projects__upstashCliMdx, projects__upstashCoreAnalyticsMdx, projects__upstashEdgeFlagsMdx, projects__upstashKafkaMdx, projects__upstashQstashSdkMdx, projects__upstashRatelimitMdx, projects__upstashReactUiMdx, projects__upstashRedisMdx, projects__upstashWebAnalyticsMdx, projects__zodBirdMdx]
