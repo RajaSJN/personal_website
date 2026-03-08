@@ -7,7 +7,13 @@ import { Eye } from "lucide-react";
 
 export const revalidate = 60;
 export default async function ProjectsPage() {
-	const projects = allProjects.filter((p) => p.published);
+	const projects = allProjects
+		.filter((p) => p.published)
+		.sort((a, b) => {
+			const dateA = a.date ? new Date(a.date).getTime() : 0;
+			const dateB = b.date ? new Date(b.date).getTime() : 0;
+			return dateB - dateA;
+		});
 	console.log("Hello there");
 	console.log(projects, "projects");
 	return (
@@ -19,7 +25,7 @@ export default async function ProjectsPage() {
 						Projects
 					</h2>
 					<p className="mt-4 text-zinc-400">
-						Some of the projects are from work and some are on my own time.
+						Some of the projects are from when I was in uni and some are from now.
 					</p>
 				</div>
 				<div className="w-full h-px bg-zinc-800" />
@@ -52,11 +58,11 @@ export default async function ProjectsPage() {
 									>
 										{project.title}
 									</h2>
-									<p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
+									<p className="mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300 pr-24">
 										{project.description}
 									</p>
-									<div className="absolute bottom-4 md:bottom-8">
-										<p className="hidden text-zinc-200 hover:text-zinc-50 lg:block">
+									<div className="absolute bottom-4 md:bottom-8 pointer-events-none z-20">
+										<p className="hidden text-zinc-200 group-hover:text-zinc-50 lg:block">
 											Read more <span aria-hidden="true">&rarr;</span>
 										</p>
 									</div>

@@ -38,6 +38,9 @@ var Project = defineDocumentType(() => ({
     },
     repository: {
       type: "string"
+    },
+    skills: {
+      type: "string"
     }
   },
   computedFields
@@ -98,4 +101,4 @@ export {
   Project,
   contentlayer_config_default as default
 };
-//# sourceMappingURL=compiled-contentlayer-config-AD7PLTJR.mjs.map
+//# sourceMappingURL=compiled-contentlayer-config-DDYLBZQY.mjs.map
