@@ -2,6 +2,7 @@ const { withContentlayer } = require("next-contentlayer");
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+	basePath: "/personal_website",
 	output: "export",
 	distDir: "dist",
 	images: {
